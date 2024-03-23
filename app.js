@@ -7,23 +7,6 @@ const fruit = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Blackb
 
 
 
-function search(str) {
-	let results = [];
-
-	Array.from(fruit).forEach((val)=>{
-		if (val.includes(str)){
-			results.push(val);
-			// console.log(results);
-		}
-	})
-
-	return results;
-}
-
-
-
-
-
 
 function searchHandler() {
 	let inputText = input.value.toLowerCase();		//	retreiving input and setting it to lower case
@@ -43,14 +26,6 @@ function searchHandler() {
 			suggestions.appendChild(newSuggestion);
 		}	
 	})
-}
-
-
-
-
-function showSuggestions(results, inputVal) {
-
-	// TODO
 }
 
 
